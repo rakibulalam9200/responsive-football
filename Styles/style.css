@@ -1,0 +1,137 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* Common style or utilites */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Top Section style */
+
+/* navigation style  */
+.top-container{
+    width: 100%;
+    background-color: #2D25A0;
+    height: 680px;
+    margin-bottom: 80px;
+}
+            
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 156px;
+    margin-right: 106px;
+    
+}
+.menu{
+    margin-top: 42px;
+}
+
+.login{
+    margin-top: 42px;
+    
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 36px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.login ul li{
+    list-style-type: none;
+}
+
+.login ul li a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    width: 123px;
+    height:44px;
+    color: #FFFFFF;
+}
+
+/* Top banner style  */
+
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.top-details{
+    margin-left: 156px;
+    margin-top: 62px;
+    width: 485px;
+}
+.top-details h1{
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.banner-img img{
+    width: 556px;
+    height: 438px;
+    margin-top: 50px;
+    margin-right: 140px;
+}
+.banner-button{
+    display: flex;
+    justify-content: left;
+    
+}
+.banner-button a{
+    padding: 10px 8px 10px 24px;
+}
+.banner-button img{
+    padding: 10px 24px 10px 0px;
+}
+.banner-button a,img{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size:16px;
+    font-weight: 500;
+}
+
+/* Player section style  */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-items: center;
+    margin-left: 180px;
+    margin-right: 210px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    box-shadow: 0px 0px 40px #E3E3E3;
+    padding: 15px;
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+}
+
+.player-details h3{
+    font-weight: 700;
+    text-align: justify;
+    font-size: 28px;
+    margin-top:16px;
+    margin-bottom: 0px;
+}
+
+.player-details p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
