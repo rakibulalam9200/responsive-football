@@ -271,7 +271,6 @@ body{
     .top-details h1{
         padding: 0px;
         font-size: 36px;
-        color: #FFFFFF;
         margin-bottom: 30px;
         margin-left: 15px;
         width: 280px;
@@ -285,13 +284,10 @@ body{
         height:260px;
         margin-left:15px;
         margin-right: 15px;
-        transform: scale(1) rotate(0deg);
-        transition: transform 1.5s ease-in-out;
     }
     
     .players,.copa,.season-content{
         grid-template-columns: repeat(1,1fr);
-        /* grid-template-rows: repeat(4,1fr); */
         justify-items: center;
         margin-left: 15px;
         margin-right: 15px;
@@ -309,8 +305,6 @@ body{
         text-align: left;
     }
     .copa-details p{
-        text-align: justify;
-        color: #6C6C6C;
         margin-top:0;
         margin-bottom: 24px;
     }
@@ -324,4 +318,59 @@ body{
       width: 320px;
   }
     
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .navbar{
+        display: none;
+    }
+
+    .top-container{
+        width: 100%;
+        background-color: #2D25A0;
+        height: 695px;
+        margin-bottom: 50px;
+    }
+    .top-banner{
+        margin-left: 15px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .top-details h1{
+        margin-top: 20px;
+        padding: 0px;
+        font-size: 48px;
+        margin-bottom: 30px;
+        width: 500px;
+    }
+
+    .top-details{
+        margin-left: 15px;
+    }
+    .banner-img img{
+        width: 420px;
+        height:340px;
+        margin-left:15px;
+        margin-right: 15px;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .copa,.season-content{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .copa-details{
+        margin:10px 20px 60px 20px;
+    }
+
 }
