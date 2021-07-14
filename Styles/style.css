@@ -9,8 +9,6 @@ body{
     padding: 0;
 }
 
-
-
 /* Top Section style */
 
 /* navigation style  */
@@ -32,10 +30,6 @@ body{
     margin-top: 42px;
 }
 
-.login{
-    margin-top: 42px;
-    
-}
 .menu ul li{
     list-style-type: none;
     display: inline-block;
@@ -45,6 +39,11 @@ body{
     text-decoration: none;
     font-size: 16px;
     color: white;
+}
+
+.login{
+    margin-top: 42px;
+    
 }
 
 .login ul li{
@@ -76,31 +75,37 @@ body{
     color: #FFFFFF;
     margin-bottom: 45px;
 }
-
+ /* image rotation and zooming */
 .banner-img img{
     width: 556px;
     height: 438px;
     margin-top: 50px;
     margin-right: 140px;
+    transform: scale(1) rotate(0deg);
+    transition: transform 1.5s ease-in-out;
 }
-.banner-button{
-    display: flex;
-    justify-content: left;
-    
+
+.banner-img img:hover{
+    transform: scale(1.2) rotate(90deg);
+    transition: transform 2s ease-in-out;
 }
-.banner-button a{
-    padding: 10px 8px 10px 24px;
-}
-.banner-button img{
-    padding: 10px 24px 10px 0px;
-}
-.banner-button>a,.banner-button>img{
+
+
+.watch-button a{
     text-decoration: none;
     background-color: #E02C6D;
     color: #FFFFFF;
     font-size:16px;
     font-weight: 500;
+    padding: 10px 24px;
 }
+.top-details .watch-button a:hover{
+    background-color: #3DBAFD;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F274E;
+}
+
 
 /* Player section style  */
 .player-container{
@@ -174,6 +179,34 @@ body{
     height: 427px;
 }
 
+/* Season seciton Style  */
+.season-section{
+    margin-bottom: 158px;
+}
+
+.season-title{
+    text-align: center;
+    font-size: 40px;
+    color: #0A0826;
+}
+
+.season-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin-left: 90px;
+    margin-right: 210px;
+    grid-column-gap: 30px;
+}
+.season-video{
+    box-shadow: 0px 0px 40px #E3E3E3;
+    padding: 15px;
+}
+
+.season-video h3{
+    text-align: center;
+    font-size: 30px;
+}
 /* footer section style  */
 
 .footer-section{
@@ -215,4 +248,38 @@ body{
 }
 .copyright .fa-copyright{
     font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .navbar{
+        display: none;
+    }
+    .top-banner{
+        flex-direction: column;
+        height: 695px;
+    }
+
+    .top-details{
+        margin-left: 15px;
+    }
+    .banner-img img{
+        width: 330px;
+        height:260px;
+        margin-left:15px;
+        margin-right: 15px;
+    }
+    
+    .players,.copa,.season-content{
+        grid-template-columns: repeat(1,1fr);
+        /* grid-template-rows: repeat(4,1fr); */
+        justify-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    
 }
