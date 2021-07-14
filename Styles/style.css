@@ -266,13 +266,15 @@ body{
     .top-banner{
         margin-left: 15px;
         flex-direction: column;
+        
     }
     .top-details h1{
         padding: 0px;
         font-size: 36px;
         color: #FFFFFF;
         margin-bottom: 30px;
-        margin-left: 65px;
+        margin-left: 15px;
+        width: 280px;
     }
 
     .top-details{
@@ -283,6 +285,8 @@ body{
         height:260px;
         margin-left:15px;
         margin-right: 15px;
+        transform: scale(1) rotate(0deg);
+        transition: transform 1.5s ease-in-out;
     }
     
     .players,.copa,.season-content{
@@ -292,7 +296,5 @@ body{
         margin-left: 15px;
         margin-right: 15px;
     }
-
-
     
 }
