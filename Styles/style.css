@@ -297,6 +297,10 @@ body{
         width: 100%;
     }
     
+    .copa-details{
+        margin-bottom: 40px;
+    }
+    
     .copa-details h2{
         font-size: 30px;
         font-weight: 700;
