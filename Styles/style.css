@@ -94,7 +94,7 @@ body{
 .banner-button img{
     padding: 10px 24px 10px 0px;
 }
-.banner-button a,img{
+.banner-button>a,.banner-button>img{
     text-decoration: none;
     background-color: #E02C6D;
     color: #FFFFFF;
@@ -103,6 +103,9 @@ body{
 }
 
 /* Player section style  */
+.player-container{
+    margin-bottom: 165px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -128,10 +131,88 @@ body{
     font-size: 28px;
     margin-top:16px;
     margin-bottom: 0px;
+    color: #18191F;
 }
 
 .player-details p{
     text-align: justify;
     margin-top: 10px;
     margin-bottom: 0px;
+    color: #6C6C6C;
+}
+
+/* bottom section style  */
+
+.bottom-section{
+    margin-bottom: 158px;
+}
+.copa{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 160px;
+    margin-right: 93px;
+}
+
+.copa-details{
+    margin-right: 54px;
+}
+
+.copa-details h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 8px;
+}
+.copa-details p{
+    text-align: justify;
+    color: #6C6C6C;
+    margin-top:0;
+    margin-bottom: 24px;
+}
+.copa-banner>img{
+    width: 567px;
+    height: 427px;
+}
+
+/* footer section style  */
+
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-logo>img{
+    height:110px;
+    width: 488px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #E7E7E8;
+    margin-right: 14px;
+    position: relative;
+}
+.fab{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 30%;
+    color: #969BAB;
+}
+
+.copyright p{
+    font-size: 18px;
+    color: black;
+}
+.copyright .fa-copyright{
+    font-size: 14px;
 }
